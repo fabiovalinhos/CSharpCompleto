@@ -5,15 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassesObjetos", "ClassesObjetos\ClassesObjetos.csproj", "{83BB486F-5911-4F12-8139-97343A95E5DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosDasClasses", "MetodosDasClasses\MetodosDasClasses.csproj", "{DE7F791D-2EE0-4882-AFD7-4A21FDE0969C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodosDasClasses", "MetodosDasClasses\MetodosDasClasses.csproj", "{DE7F791D-2EE0-4882-AFD7-4A21FDE0969C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TermoThis", "TermoThis\TermoThis.csproj", "{B040704E-A123-4CE7-8E75-F1515FBE3BEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TermoThis", "TermoThis\TermoThis.csproj", "{B040704E-A123-4CE7-8E75-F1515FBE3BEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipoDelegate", "TipoDelegate\TipoDelegate.csproj", "{3EEED266-BCB4-4453-9D64-531688E1CC3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TipoDelegate", "TipoDelegate\TipoDelegate.csproj", "{3EEED266-BCB4-4453-9D64-531688E1CC3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoConstrutor", "MetodoConstrutor\MetodoConstrutor.csproj", "{977D4B6F-783B-45B6-A3D1-B01D75360827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodoConstrutor", "MetodoConstrutor\MetodoConstrutor.csproj", "{977D4B6F-783B-45B6-A3D1-B01D75360827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estaticas", "Estaticas\Estaticas.csproj", "{90F0D1E1-01D3-4651-9D9D-86EA53ECEFFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estaticas", "Estaticas\Estaticas.csproj", "{90F0D1E1-01D3-4651-9D9D-86EA53ECEFFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propriedades", "Propriedades\Propriedades.csproj", "{1D38724A-96D5-432E-9BE4-24DCDE74D54C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{90F0D1E1-01D3-4651-9D9D-86EA53ECEFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F0D1E1-01D3-4651-9D9D-86EA53ECEFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F0D1E1-01D3-4651-9D9D-86EA53ECEFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D38724A-96D5-432E-9BE4-24DCDE74D54C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D38724A-96D5-432E-9BE4-24DCDE74D54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D38724A-96D5-432E-9BE4-24DCDE74D54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D38724A-96D5-432E-9BE4-24DCDE74D54C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
