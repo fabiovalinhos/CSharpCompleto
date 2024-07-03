@@ -1,20 +1,13 @@
 ﻿namespace Heranca
 {
-    public  class Veiculo
+    public abstract  class Veiculo
     {
         public string Cor { get; set; }
 
         public string Marca { get; set; }
 
-        public void Acelerar()
-        {
+        public abstract void Acelerar();
 
-            Console.WriteLine("Acelerou");
-        }
-
-        public void Parar()
-        {
-            Console.WriteLine("Parou!");
-        }
+        public abstract void Parar();
     }
 }
