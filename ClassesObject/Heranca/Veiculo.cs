@@ -1,6 +1,6 @@
 ﻿namespace Heranca
 {
-    public abstract  class Veiculo
+    public abstract class Veiculo
     {
         public string Cor { get; set; }
 
