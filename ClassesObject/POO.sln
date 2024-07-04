@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsular", "Encapsular\En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heranca", "Heranca\Heranca.csproj", "{C36C0FC7-DDEF-4198-907F-325EE15AEE98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modificadores", "Modificadores\Modificadores.csproj", "{0EADB885-6703-4578-B7A8-72EA47513163}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C36C0FC7-DDEF-4198-907F-325EE15AEE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C36C0FC7-DDEF-4198-907F-325EE15AEE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C36C0FC7-DDEF-4198-907F-325EE15AEE98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EADB885-6703-4578-B7A8-72EA47513163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EADB885-6703-4578-B7A8-72EA47513163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EADB885-6703-4578-B7A8-72EA47513163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EADB885-6703-4578-B7A8-72EA47513163}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
