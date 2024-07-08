@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modificadores", "Modificado
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{929DA0D6-6FB2-48E9-A8F7-42DFDF660732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaGeralPOO", "MediaGeralPOO\MediaGeralPOO.csproj", "{4DBB4199-A23F-4752-A2AE-E0A604238BED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{929DA0D6-6FB2-48E9-A8F7-42DFDF660732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929DA0D6-6FB2-48E9-A8F7-42DFDF660732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929DA0D6-6FB2-48E9-A8F7-42DFDF660732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBB4199-A23F-4752-A2AE-E0A604238BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBB4199-A23F-4752-A2AE-E0A604238BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBB4199-A23F-4752-A2AE-E0A604238BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBB4199-A23F-4752-A2AE-E0A604238BED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
