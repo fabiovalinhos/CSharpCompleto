@@ -92,11 +92,25 @@ namespace LINQ_1
             }
         }
 
-        public void MetodoString(){
-            IEnumerable<string> resultado= from nome in lista_nomes where nome.StartsWith("M") select nome;
+        public void MetodoString()
+        {
+            IEnumerable<string> resultado = from nome in lista_nomes where nome.StartsWith("M") select nome;
 
-            foreach(var item in resultado){
+            foreach (var item in resultado)
+            {
                 Console.WriteLine($"Nome escolhido: {item}");
+            }
+        }
+
+        public void OperadorWhere()
+        {
+            var retorno = from nome in lista_nomes
+                          where nome.ToLower().Contains("l")
+                          select nome;
+
+            foreach (var item in retorno)
+            {
+                Console.WriteLine($"Nome escolhido no whereß: {item}");
             }
         }
     }

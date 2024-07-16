@@ -3,7 +3,9 @@
 AcoesLinq acoesLinq = new();
 
 // acoesLinq.MetodoParaLinq();
-acoesLinq.MetodoString();
+// acoesLinq.MetodoString();
+
+acoesLinq.OperadorWhere();
 
 
 Console.WriteLine("Linq");
