@@ -25,6 +25,8 @@ namespace LINQ_1
                 "Rodrigo",
                 "Renam",
                 "Lindalva",
+                "Frederico",
+                "Arildo"
             ];
             #endregion 
 
@@ -57,28 +59,44 @@ namespace LINQ_1
 
             #region Lista de estados
             lista_estados = new Dictionary<string, string>
-        {
-            { "Califórnia", "Estados Unidos" },
-            { "Quebec", "Canadá" },
-            { "Baviera", "Alemanha" },
-            { "Nova Gales do Sul", "Austrália" },
-            { "Maharashtra", "Índia" },
-            { "São Paulo", "Brasil" },
-            { "Ontário", "Canadá" },
-            { "Karnataka", "Índia" },
-            { "Rio de Janeiro", "Brasil" },
-            { "Flórida", "Estados Unidos" },
-            { "Hokkaido", "Japão" },
-            { "Sichuan", "China" },
-            { "Catalunha", "Espanha" },
-            { "Lombardia", "Itália" },
-            { "Île-de-France", "França" },
-            { "Gauteng", "África do Sul" },
-            { "Valência", "Espanha" },
-            { "Queensland", "Austrália" },
-            { "Alberta", "Canadá" },
-            { "Calábria", "Itália" }
-        };
+{
+    { "Califórnia", "Estados Unidos" },
+    { "Quebec", "Canadá" },
+    { "Baviera", "Alemanha" },
+    { "Nova Gales do Sul", "Austrália" },
+    { "Maharashtra", "Índia" },
+    { "São Paulo", "Brasil" },
+    { "Ontário", "Canadá" },
+    { "Karnataka", "Índia" },
+    { "Rio de Janeiro", "Brasil" },
+    { "Flórida", "Estados Unidos" },
+    { "Hokkaido", "Japão" },
+    { "Sichuan", "China" },
+    { "Catalunha", "Espanha" },
+    { "Lombardia", "Itália" },
+    { "Île-de-France", "França" },
+    { "Gauteng", "África do Sul" },
+    { "Valência", "Espanha" },
+    { "Queensland", "Austrália" },
+    { "Alberta", "Canadá" },
+    { "Calábria", "Itália" },
+    { "Texas", "Estados Unidos" },
+    { "British Columbia", "Canadá" },
+    { "Saxônia", "Alemanha" },
+    { "Vitória", "Austrália" },
+    { "Uttar Pradesh", "Índia" },
+    { "Minas Gerais", "Brasil" },
+    { "Manitoba", "Canadá" },
+    { "Tamil Nadu", "Índia" },
+    { "Bahia", "Brasil" },
+    { "Nevada", "Estados Unidos" },
+    { "Osaka", "Japão" },
+    { "Hunan", "China" },
+    { "Andaluzia", "Espanha" },
+    { "Lácio", "Itália" },
+    { "Nouvelle-Aquitaine", "França" }
+};
+
             #endregion
         }
 
@@ -111,6 +129,61 @@ namespace LINQ_1
             foreach (var item in retorno)
             {
                 Console.WriteLine($"Nome escolhido no whereß: {item}");
+            }
+        }
+
+        public void OperadorOrdenacao()
+        {
+            var res = from num in lista_numeros
+                      orderby num descending
+                      where num <= 30
+                      select num;
+
+            foreach (var num in res)
+            {
+                Console.WriteLine($"Numero na ordem {num}");
+            }
+
+            Console.WriteLine(" -- ");
+
+            var resNomes = from nome in lista_nomes
+                           orderby nome descending
+                           select nome;
+
+            foreach (var nome in resNomes)
+            {
+                Console.WriteLine(nome);
+            }
+
+            Console.WriteLine(" -- ");
+
+            var resDictionary = from produto in lista_produtos
+                                orderby produto.Key descending
+                                select produto;
+
+            foreach (KeyValuePair<string, double> item in resDictionary)
+            {
+                Console.WriteLine($"chave {item.Key} - R${item.Value}");
+            }
+
+        }
+
+
+        public void OperadorGroupBy()
+        {
+            //Operadores de agrupamento
+
+            var res = from estado in lista_estados
+                      group estado by estado.Value;
+
+            foreach (var grupo in res)
+            {
+                Console.WriteLine($"Nome do grupo {grupo.Key}");
+                foreach (var estado in grupo)
+                {
+                    Console.WriteLine($"Valor de cada estado dentro de cada grupo {estado.Key}");
+                }
+                Console.WriteLine("");
             }
         }
     }

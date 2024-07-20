@@ -29,8 +29,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaGeralPOO", "MediaGeral
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursividade", "..\Recursividade\Recursividade\Recursividade.csproj", "{5664743D-54E2-4ADD-960B-0B680F96AC4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teste", "..\Recursividade\teste\teste.csproj", "{F1268387-3F62-4BA2-AD9A-128BD506A306}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,10 +87,6 @@ Global
 		{5664743D-54E2-4ADD-960B-0B680F96AC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5664743D-54E2-4ADD-960B-0B680F96AC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5664743D-54E2-4ADD-960B-0B680F96AC4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1268387-3F62-4BA2-AD9A-128BD506A306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1268387-3F62-4BA2-AD9A-128BD506A306}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1268387-3F62-4BA2-AD9A-128BD506A306}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1268387-3F62-4BA2-AD9A-128BD506A306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

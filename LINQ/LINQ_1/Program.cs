@@ -5,7 +5,8 @@ AcoesLinq acoesLinq = new();
 // acoesLinq.MetodoParaLinq();
 // acoesLinq.MetodoString();
 
-acoesLinq.OperadorWhere();
+// acoesLinq.OperadorWhere();
 
+// acoesLinq.OperadorOrdenacao();
 
-Console.WriteLine("Linq");
+acoesLinq.OperadorGroupBy();
