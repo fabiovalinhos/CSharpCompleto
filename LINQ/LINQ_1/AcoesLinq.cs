@@ -224,5 +224,26 @@ namespace LINQ_1
 
             Console.WriteLine($"O maior nome da lista é: {maiorNome}");
         }
+
+        public void OperadoresElemento()
+        {
+            int primeiro = lista_numeros.FirstOrDefault();
+
+            Console.WriteLine($"Primeiro {primeiro}");
+
+            int ultimo = lista_numeros.LastOrDefault();
+
+            Console.WriteLine($"Último {ultimo}");
+
+            int elemento = lista_numeros.ElementAtOrDefault(5000);
+
+            Console.WriteLine($"Elemento da posição {elemento}");
+
+            var consulta = from num in lista_numeros
+                           where num > 1000
+                           select num;
+
+            Console.WriteLine($"Resultado da consulta: {consulta.FirstOrDefault()}");
+        }
     }
 }

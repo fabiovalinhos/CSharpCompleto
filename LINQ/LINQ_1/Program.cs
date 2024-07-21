@@ -11,4 +11,6 @@ AcoesLinq acoesLinq = new();
 
 // acoesLinq.OperadorGroupBy();
 
-acoesLinq.OperadoresAgregacao();
+// acoesLinq.OperadoresAgregacao();
+
+acoesLinq.OperadoresElemento();
