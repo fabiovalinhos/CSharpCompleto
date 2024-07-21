@@ -32,8 +32,7 @@ namespace LINQ_1
 
             #region Lista de números
             lista_numeros =
-            [3, 7, 12, 19, 23, 34, 45, 56, 67, 78, 81, 92, 105, 117, 130, 142, 155, 168, 179, 183, 195, 207, 219, 230, 245]
-;
+            [3, 7, 12, 19, 23, 34, 45, 56, 67, 78, 81, 92, 105, 117, 130, 142, 155, 168, 179, 183, 195, 207, 219, 230, 245];
             #endregion
 
             #region Lista de produtos
@@ -185,6 +184,45 @@ namespace LINQ_1
                 }
                 Console.WriteLine("");
             }
+        }
+
+        public void OperadoresAgregacao()
+        {
+            // int cont1 = lista_nomes.Count();
+            // int cont2 = (from nome in lista_nomes where nome.StartsWith("G") select nome).Count();
+
+            // Console.WriteLine($"Quantidade de nomes {cont1}");
+            // Console.WriteLine($"Quantidade de nomes com a letra G de início {cont2}");
+
+            // double media1= lista_numeros.Average();
+            // Console.WriteLine($"Média dos valores {media1}");
+
+            // var consultaResultado = from num in lista_numeros where num < 10 select num;
+            // Console.WriteLine($"Média dos menores do que 10: {consultaResultado.Average()}");
+
+            // Console.WriteLine($"A soma de todos os números é {lista_numeros.Sum()}");
+
+            // var resSomaViaLinq = (from num in lista_numeros where num < 20 select num).Sum();
+            // Console.WriteLine($"A soma de todos os números menores que 20: {resSomaViaLinq}");
+
+
+            Console.WriteLine($"Valor minimo em lista numeros {lista_numeros.Min()}");
+            Console.WriteLine($"Valor máximo em lista numeros {lista_numeros.Max()}");
+
+            string maiorNome = lista_nomes.Aggregate(
+                lista_nomes[0], (maior, proximo) =>
+                {
+                    if (maior.Length > proximo.Length)
+                    {
+                        return maior;
+                    }
+                    else
+                    {
+                        return proximo;
+                    }
+                });
+
+            Console.WriteLine($"O maior nome da lista é: {maiorNome}");
         }
     }
 }
