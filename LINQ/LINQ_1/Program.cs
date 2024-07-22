@@ -13,4 +13,6 @@ AcoesLinq acoesLinq = new();
 
 // acoesLinq.OperadoresAgregacao();
 
-acoesLinq.OperadoresElemento();
+// acoesLinq.OperadoresElemento();
+
+acoesLinq.MetodosLambda();

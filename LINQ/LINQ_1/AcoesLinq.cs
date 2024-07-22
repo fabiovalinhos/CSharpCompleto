@@ -245,5 +245,40 @@ namespace LINQ_1
 
             Console.WriteLine($"Resultado da consulta: {consulta.FirstOrDefault()}");
         }
+
+        public void MetodosLambda()
+        {
+            // LINQ com métodos lambda
+            ////
+            var cons1 = from nome in lista_nomes
+                        select nome; // comum
+            var cons1L = lista_nomes.Select(nome => nome);
+            var total = string.Join(", ", cons1.ToArray()); // apenas evitando o foreach
+
+            var cons2 = from nome in lista_nomes
+                        where nome.StartsWith("M")
+                        select nome;
+            var cons2L = lista_nomes.Where(nome => nome.StartsWith("M"));
+
+            var cons3 = from nome in lista_nomes
+                        orderby nome
+                        select nome;
+            var cons3L = lista_nomes.OrderBy(nome => nome);
+            var cons3LD = lista_nomes.OrderByDescending(nome => nome);
+
+            var cons4 = from estado in lista_estados
+                        group estado by estado.Value;
+            var cons4L = lista_estados.GroupBy(estado => estado.Value);
+
+
+            foreach (var item in cons4L)
+            {
+                Console.WriteLine($"Chave país {item.Key}");
+                foreach (var estado in item)
+                {
+                    Console.WriteLine($"   Chave estado {estado.Key}");
+                }
+            }
+        }
     }
 }
